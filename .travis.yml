@@ -16,9 +16,9 @@ after_success:
   # login to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # push images to docker hub
-  docker push jreyes4/multi-client
-  docker push jreyes4/multi-nginx
-  docker push jreyes4/multi-server
-  docker push jreyes4/multi-worker
+  - docker push jreyes4/multi-client
+  - docker push jreyes4/multi-nginx
+  - docker push jreyes4/multi-server
+  - docker push jreyes4/multi-worker
 
 
